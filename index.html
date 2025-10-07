@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DOM Manipulation Exercises (1-10)</title>
+  <link rel="stylesheet" href="style.css" href="script.js" />
+</head>
+<body>
+  <main class="container">
+    <h1>DOM Manipulation Exercises (1 - 10)</h1>
+    <p class="subtitle">Each exercise shows the objective and includes bonus features where applicable.</p>
+
+    <!-- Exercise 1 -->
+    <section id="exercise-1" class="exercise card">
+      <h2>Exercise 1 — Change Text Content</h2>
+      <p id="myText">Hello</p>
+      <button id="changeBtn">Change Text</button>
+      <small class="hint">Bonus: toggles between "Hello" and "Goodbye".</small>
+    </section>
+
+    <!-- Exercise 2 -->
+    <section id="exercise-2" class="exercise card">
+      <h2>Exercise 2 — Modify CSS Styles Dynamically</h2>
+      <div id="styleBox" class="style-box">Click me to change my style</div>
+      <div class="controls">
+        <label><input type="checkbox" id="animateToggle"> Animate changes (CSS transition)</label>
+      </div>
+      <small class="hint">Click the box to cycle colors and font size. Toggle animation to see transition.</small>
+    </section>
+
+    <!-- Exercise 3 -->
+    <section id="exercise-3" class="exercise card">
+      <h2>Exercise 3 — Add and Remove Classes</h2>
+      <div class="items-row" id="highlightItems">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+      </div>
+      <button id="toggleClassBtn">Toggle highlight on first item</button>
+      <small class="hint">Bonus: click any item to highlight it and remove highlight from others.</small>
+    </section>
+
+    <!-- Exercise 4 -->
+    <section id="exercise-4" class="exercise card">
+      <h2>Exercise 4 — Create and Append Elements</h2>
+      <input id="newItemText" placeholder="New list item text" />
+      <button id="addItemBtn">Add Item</button>
+      <ul id="myList"></ul>
+      <small class="hint">Bonus: each created item gets a remove button.</small>
+    </section>
+
+    <!-- Exercise 5 -->
+    <section id="exercise-5" class="exercise card">
+      <h2>Exercise 5 — Remove Elements from the DOM</h2>
+      <ul id="removableList">
+        <li>Removable 1 <button class="del-btn">Delete</button></li>
+        <li>Removable 2 <button class="del-btn">Delete</button></li>
+        <li>Removable 3 <button class="del-btn">Delete</button></li>
+      </ul>
+      <label><input type="checkbox" id="confirmDelete" checked> Confirm before deleting</label>
+      <small class="hint">Bonus: confirmation dialog before deletion.</small>
+    </section>
+
+    <!-- Exercise 6 -->
+    <section id="exercise-6" class="exercise card">
+      <h2>Exercise 6 — Handling Events</h2>
+      <div id="eventArea" class="event-area">Move mouse here or press any key</div>
+      <p>Last key pressed: <span id="lastKey">—</span></p>
+      <div id="dotsContainer" class="dots-container">
+        <small>Bonus drawing area: move mouse while holding left button down to draw dots.</small>
+      </div>
+    </section>
+
+    <!-- Exercise 7 -->
+    <section id="exercise-7" class="exercise card">
+      <h2>Exercise 7 — DOM Traversal</h2>
+      <div class="tree" id="traversalTree">
+        <div class="node">Grandparent
+          <div class="node">Parent
+            <div class="node leaf">Child (click me)</div>
+          </div>
+        </div>
+      </div>
+      <p id="ancestorsOutput"></p>
+      <small class="hint">Click the 'Child' node to highlight siblings, parent, and ancestors.</small>
+    </section>
+
+    <!-- Exercise 8 -->
+    <section id="exercise-8" class="exercise card">
+      <h2>Exercise 8 — Form Handling</h2>
+      <form id="sampleForm">
+        <label>Name: <input name="name" type="text" required /></label>
+        <label>Age: <input name="age" type="number" min="0" required /></label>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formOutput" class="form-output"></div>
+      <small class="hint">Bonus: simple validation and error messages displayed inline.</small>
+    </section>
+
+    <!-- Exercise 9 -->
+    <section id="exercise-9" class="exercise card">
+      <h2>Exercise 9 — Fetch and Display Data</h2>
+      <div class="fetch-controls">
+        <button id="loadUsersBtn">Load users (from JSONPlaceholder)</button>
+        <input id="filterInput" placeholder="Filter by name..." />
+      </div>
+      <ul id="usersList"></ul>
+      <small class="hint">Bonus: client-side search filter for results.</small>
+    </section>
+
+    <!-- Exercise 10 -->
+    <section id="exercise-10" class="exercise card">
+      <h2>Exercise 10 — Simple Animations</h2>
+      <div class="animation-area">
+        <div id="ball" class="ball"></div>
+      </div>
+      <div class="anim-controls">
+        <button id="startBounce">Start Bounce</button>
+        <button id="stopBounce">Stop</button>
+      </div>
+      <small class="hint">Bonus: bouncing ball uses requestAnimationFrame.</small>
+    </section>
+
+    <footer class="footer">
+      <small>Completed: DOM exercises — HTML, CSS, JS separated. Code is commented and ready to run.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
